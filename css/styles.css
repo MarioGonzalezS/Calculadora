@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.785) !important;
+}
+
+.container{
+    margin-top: 1%;
+}
+
+
+.formResult{
+    background-color: rgba(80, 80, 80, 0.265) !important;
+    border: none !important;
+    box-shadow: 0px 0px 5px rgb(87, 87, 87), 0px 0px 5px rgb(87, 87, 87), 0px 0px 5px rgb(87, 87, 87),0px 0px 5px rgb(87, 87, 87),0px 0px 5px rgb(87, 87, 87); 
+    min-height: 85px;
+    max-height: 85px;
+}
+
+.calculator{
+    width: 28%;
+}
+
+/*Estilos y animaciones del boton = */
+.btn-warning{
+    border: none !important;
+    background-color: rgb(255, 169, 32) !important;
+    color: white !important;
+    font-size: 20px !important;
+}
+.btn-warning:hover{
+    background-color: rgb(250, 187, 85) !important;
+}
+.btn-warning:active{
+    background-color: rgb(255, 192, 92) !important;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+/*Sombra blanca detras de los botones*/
+.allBtn:active{
+    box-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+#cero{
+    width: 52%;
+}
+
+/*Estilos de los botones superiores grises claros*/
+.btnTop{
+    border: none !important;
+    background-color: #b7c0c9 !important;
+    color: black !important;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.btnTop:hover{
+    background-color: #c5cfd8 !important;
+}
+.btnTop:active{
+    background-color: #d9e3ed !important;
+}
+
+/*Estilos para los botones de operaciones que se quedan fijados hasta tocar otra tecla*/
+.btnRight:focus{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(255, 169, 32) !important;
+    box-shadow: 0px 0px 5px rgb(255, 169, 32);
+}
+
+/*HISTORIAL inferior*/
+.formRecord{
+    height: 400px;
+    max-width: 320px;
+    background-color: #343434 !important;
+    box-shadow: 0px 0px 5px rgb(87, 87, 87);
+    border: none !important;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.formRecord::-webkit-scrollbar{
+    width: 10px;
+}
+.formRecord::-webkit-scrollbar-track{
+    background-color: #343434 !important;
+    background-color: white;
+}
+.formRecord::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.303);
+    border: 3px solid #343434 ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;    
+}
+
+#record{
+    font-size: 15px !important;
+    max-width: 320px;
+
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+/* Boton borrar historial */
+
+.trashBtn{
+    background-color: rgba(0, 0, 0, 0.052) !important;
+    box-shadow: 0px 0px 5px rgb(87, 87, 87);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1%;
+    border: none !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.trashBtn:hover{
+    background-color: rgba(0, 0, 0, 0.127) !important;
+}
+
+.trashBtn:active{
+    background-color: rgba(0, 0, 0, 0.162) !important;
+    box-shadow: 0px 0px 5px rgb(87, 87, 87), 0px 0px 5px rgb(87, 87, 87), 0px 0px 5px rgb(87, 87, 87), 0px 0px 5px rgb(87, 87, 87);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 1400px) {
+    .calculator{
+        width: 363px !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .formRecord{
+        margin-top: 30px;
+        height: 200px;
+    }
+}
